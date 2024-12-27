@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio django</title>
+    <style>
+        body {
+            font-family: "Courier New", Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #0f0;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #111;
+            color: #0f0;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            text-shadow: 0 0 10px #0f0;
+        }
+        section {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: #111;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+        }
+        h2, h3 {
+            color: #0f0;
+            text-shadow: 0 0 5px #0f0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 0.5rem 0;
+        }
+        .projects {
+            margin: 1.5rem 0;
+        }
+        .project-item {
+            margin-bottom: 1.5rem;
+        }
+        a {
+            color: #0f0;
+            text-decoration: none;
+            border-bottom: 1px solid #0f0;
+        }
+        a:hover {
+            text-shadow: 0 0 10px #0f0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #111;
+            color: #0f0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 255, 0, 0.2);
+        }
+        .glitch {
+            text-transform: uppercase;
+            display: inline-block;
+            position: relative;
+        }
+        .glitch::before,
+        .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+        }
+        .glitch::before {
+            color: #ff0000;
+            z-index: -1;
+            transform: translate(2px, 0);
+        }
+        .glitch::after {
+            color: #00ffdd;
+            z-index: -2;
+            transform: translate(-2px, 0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="glitch" data-text="My Hacker Portfolio">SK portfolio</h1>
+    </header>
+    <section>
+        <h2>About Me</h2>
+        <p>Hello! I’m <span class="glitch" data-text="Sadhiesh Krishnan M">Sadhiesh Krishnan M</span>, a passionate developer specializing in Python, Java, and web application development with a flair for cybersecurity.</p>
+
+        <h2>Skills</h2>
+        <ul>
+            <li>Python, Java, Flask, Django</li>
+            <li>ReactJS, HTML, CSS</li>
+            <li>SQL, Ethical Hacking, Node js</li>
+        </ul>
+
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-item">
+                <h3>Website Vulnerability Scanner</h3>
+                <p>Built a Python-based tool to identify vulnerabilities in websites.</p>
+            </div>
+            <div class="project-item">
+                <h3>Personal Portfolio Website</h3>
+                <p>Developed using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-item">
+                <h3>Subdomain Crawling Tool</h3>
+                <p>Python application for automated subdomain discovery.</p>
+            </div>
+        </div>
+
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:satheshkrishnan53565@gmail.com">satheshkrishnan53565@gmail.com</a></p>
+        <p>Phone: <a href="tel:+919944860319">+91 99448 60319</a></p>
+    </section>
+    <footer>
+        <p>© 2024 <span class="glitch" data-text="Sadhiesh Krishnan M">Sadhiesh Krishnan M</span></p>
+    </footer>
+</body>
+</html>
